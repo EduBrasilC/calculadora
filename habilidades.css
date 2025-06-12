@@ -32,7 +32,7 @@
 
 
 }
-.habildades .li:hover {
+.habilidades .li:hover {
     background-color: #7a8085; /* Cor de fundo ao passar o mouse */
     color: #ffffff; /* Cor do texto ao passar o mouse */
     transition: background-color 0.3s, color 0.3s; /* Transição suave */

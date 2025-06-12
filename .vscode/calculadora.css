@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f9fafb 100%);
+    min-height: 100vh;
+    padding: 2rem;
+    margin: 0;
+}
+
+#quiz-container {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#quiz-container h2 {
+    color: #3b0d91;
+    margin-bottom: 2rem;
+}
+
+#quiz-container img {
+    width: 130px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 16px;
+    border: 3px solid transparent;
+    transition: border 0.2s, box-shadow 0.2s, transform 0.2s;
+    background: #f3f4f6;
+    box-shadow: 0 2px 8px rgba(59,13,145,0.08);
+}
+
+#quiz-container img:hover,
+.opcao-img.selecionada {
+    border: 3px solid #3b0d91;
+    box-shadow: 0 0 16px #3b0d9133;
+    transform: scale(1.05);
+    background: #e0e7ff;
+}
+
+form {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 1.2rem;
+    color: #3b0d91;
+    font-weight: 500;
+}
+
+input[type="number"] {
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #b7e7ce;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    background: #f9fafb;
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    background: linear-gradient(90deg, #3b0d91 60%, #63ecb3 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 1rem 0.5rem 0 0.5rem;
+    box-shadow: 0 2px 8px rgba(59,13,145,0.10);
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #63ecb3 0%, #3b0d91 100%);
+    transform: scale(1.05);
+}
+
+#resultado {
+    background: #e0e7ff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    color: #0f0249;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 8px rgba(59,13,145,0.08);
+}
