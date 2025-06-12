@@ -1,0 +1,30 @@
+.languages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.languages li {
+    margin: 0rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.25rem;
+    color: #d8e7eb;
+    font-weight: 700;
+}
+
+.languages li::before {
+    content: "♠︎";
+    display: inline-block;
+    width: 1rem 1.5rem;
+    height: 1rem 1.5rem;
+    color: #d0dae9;
+    margin-right: 0rem;
+    font-size: 1.0rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}

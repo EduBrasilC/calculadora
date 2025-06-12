@@ -1,0 +1,48 @@
+.portfolio {
+  margin: 0;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: flex-start;
+  background: #9da8a0; /* azul claro, por exemplo */
+  border-radius: 0.7rem;
+  
+}
+
+.portfolio li {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.25rem;
+  color: #314649;
+  font-weight: 700;
+  background: #918f9e;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(22, 22, 22, 0.05);
+  flex-direction: column;   
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem 0;
+  position: relative;
+}
+
+.portfolio li .title {
+    
+ display: flex;
+ flex-direction: row;  
+ align-items: center;
+ font-size: 1.5rem;
+ font-weight: 700;
+ color: #f0e8e8;
+ margin-bottom: 0.5rem; 
+
+}
+
+.portfolio li .title::before {
+    content: "♣︎";
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    color: #034122;
+}

@@ -1,0 +1,197 @@
+.header::after
+{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('https://cdn-icons-png.freepik.com/256/459/459545.png?semt=ais_hybrid');
+    
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 1510px;
+    margin: 1rem auto;
+    gap: 10rem;
+    border: 3px solid #635866; /* Borda ao redor de tudo */
+    background: linear-gradient(135deg, #0f1113, #19171b 70%, #0d0d0e); /* Degradê suave */
+}
+
+
+/* Remova as linhas de border abaixo */
+.header .photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-top: 0;
+    background: #e3e7eb; /* Cor de fundo da foto */
+    /* border: 2px solid #4f2f57; */
+}
+
+.portfolio-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 3.0rem;
+    color: #808d8b;
+    text-align: left;
+    margin: 0; /* Remove a margem */
+    width: 50vw;
+    background: #646e5f; /* Cor de fundo do título */
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+}
+
+.header p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #67b1b1;
+    font-size: 1.0rem;
+    margin: 0; /* Remove a margem */
+    line-height: 1.6;
+    text-align: left;
+    font-weight: bold;
+    background: #72a7e2; /* Cor de fundo dos parágrafos */
+    padding: 0.3rem 0.7rem;
+}
+
+@media (max-width: 700px) {
+    .main {
+        padding: 0.5rem;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .acordeon .content ul,
+    .skills {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .portfolio li,
+    .skills li {
+        padding: 1rem 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+.header p::before {
+    content: "➤";
+    color: #5762c4;
+    font-weight: bold;
+    margin-right: 0.3em;
+}
+
+.header p.fone::before {
+    content: "📱";
+}
+
+.header p.email::before {
+    content: "✉️";
+}
+
+.header p.local::before {
+    content: "🌍";
+}
+body {
+    min-height: 100vh;
+    height: 100vh;
+    background: linear-gradient(120deg, #161618, #151018, #1e2233);
+}
+
+
+
+.info-block {
+    background: linear-gradient(135deg, #3a2655, #2e445c 70%, #392b5f); /* Degradê no bloco */
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* ou center, se quiser centralizado */
+    box-shadow: 0 2px 8px rgba(233, 231, 231, 0.05);
+}
+
+.portfolio-title,
+.header p {
+    margin: 0 !important; /* Remove qualquer margem */
+    background: none;     /* Remove fundo individual */
+    padding: 0;           /* Remove padding individual */
+}
+.acordeon {
+    width: 100%;
+    border: 1px solid #416374;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    
+    }
+
+
+
+.acordeon .acordeon-trigger {
+     width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #100e13;   /* <-- Altere esta linha para a cor desejada */
+    color: #183333;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.acordeon .arrow {
+    font-size: 1.2em;
+    transition: transform 0.3s;
+}
+
+.acordeon.open .arrow {
+    transform: rotate(180deg);
+}
+
+.acordeon .content {
+    display: none;
+    padding: 1rem 2rem;
+    background: #8c9497;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.acordeon.open .content {
+    display: block;
+}
+
+.acordeon.open .arrow {
+    color: #58286e;         /* Cor da seta */
+    font-size: 2rem;        /* Tamanho maior */
+    font-weight: bold;      /* Negrito */
+    text-shadow: 1px 1px 4px #615868; /* Sombra suave */
+    transition: transform 0.3s, color 0.3s;
+}
+
+
+.acordeon .acordeon-trigger:hover  .arrow {
+    color: #252b2e;         /* Cor ao passar o mouse */
+}
+.acordeon .acordeon-trigger:hover {
+    background: #402370;      /* Cor de fundo ao passar o mouse */
+    color: #cad4df;           /* Cor do texto ao passar o mouse */
+}
+
+.acordeon .acordeon-trigger:hover .arrow {
+    color: #023b4b;           /* Cor da seta ao passar o mouse */
+}
